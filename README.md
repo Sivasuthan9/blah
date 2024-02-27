@@ -7,7 +7,11 @@ The Jac Language CLI offers a variety of commands to facilitate Jac programming 
 ## `ir` Command
 
 The `ir` command generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file.
+### Usage
 
+```bash
+$ jac tool ir <output_type> <file_path>
+```
 ### Parameters
 
 - `output_type`: Choose one of the following options:
