@@ -1,4 +1,4 @@
-# Jac Language Command Line Interface (CLI) Documentation
+# Jac Language Command Line Interface (CLI)
 
 The Jac Language CLI offers a variety of commands to facilitate Jac programming tasks efficiently. This document provides an overview of each command along with its usage instructions.
 
