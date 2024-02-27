@@ -29,3 +29,7 @@ To get the symbol table of a Jac file:
 
 ```bash
 $ jac tool ir sym <file_path>
+```
+```cmd
+$ jac tool ir sym <file_path>
+```
