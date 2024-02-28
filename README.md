@@ -3,7 +3,7 @@
 Jac Language CLI is with a variety of commands to facilitate users. Additionally, Jac language offers users the ability to define custom CLI commands through plugins. This document aims to provide an overview of each command along with clear usage instructions.
 
 ### Below are avilable Commands
-- [tool](#Command`tool`)
+- [tool](#command`tool`)
 - [format](#installation)
 - [run](#getting-started)
 - [build](#syntax)
