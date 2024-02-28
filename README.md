@@ -9,11 +9,11 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
 ```bash
-$ jac tool [-h] tool args
+$ jac tool jac_tool args
 ```
   ### parameters to use the tool:
   -  `-h` : Optional which gives help message.
-  - `tool`: The name of the AST tool to execute.
+  - `jac_tool`: The name of the AST tool to execute.
   - `args`: Optional arguments for the specific AST tool.
 
 ## 1. `ir` tool:
