@@ -25,7 +25,7 @@ $ jac tool <jac_tool> <args>
   ```bash
   $ jac tool ir <output> <file_path>
   ```
-  >Parameters to use the ir tool:
+  Parameters to use the ir tool:
 -`output`: Choose one of the following options:
     -`sym`: Displays the symbol table of the specified .jac file.
     -`sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
