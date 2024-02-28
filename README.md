@@ -18,9 +18,9 @@ Jac Language offers language tools to perform various tasks efficiently. The `to
 $ jac tool <jac_tool> <args>
 ```
 Parameters to execute the tool command:
-- `jac_tool`: The name of the AST tool to execute.
+- `jac_tool`: The name of the language tool to execute.
     - `ir`, `pass_template`, `py_ast_nodes`,  `md_doc`, `automate_ref` are the jac_tools used to handle (Usage instruction is below)
-- `args`: Optional arguments for the specific AST tool.
+- `args`: Optional arguments for the specific language tool.
 
 
     ## 1. jac_tool `ir`:
