@@ -19,6 +19,7 @@ $ jac tool <jac_tool> <args>
 ```
 Parameters to execute the tool command:
 - `jac_tool`: The name of the AST tool to execute.
+    - `ir`, `pass_template`, `py_ast_nodes`,  `md_doc`, `automate_ref` are available jac_tools(usage instruction is below)
 - `args`: Optional arguments for the specific AST tool.
 
     ## 1. jac_tool `ir`:
