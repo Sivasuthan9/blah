@@ -37,14 +37,14 @@ $ jac tool <jac_tool> <args>
 
   ### Examples
   >To get the symbol table tree of a Jac file:
-  ```bash
-  $ jac tool ir sym <file_path>
-  ```
-  To generate a dot graph of the symbol table tree for a Jac file:
-  ```bash
-  $ jac tool ir sym. <file_path>
-  ```
-  To view the AST tree of a Jac file:
-  ```bash
-  $ jac tool ir ast <file_path>
-  ```
+  >```bash
+  >$ jac tool ir sym <file_path>
+  >```
+  >To generate a dot graph of the symbol table tree for a Jac file:
+  >```bash
+  >$ jac tool ir sym. <file_path>
+  >```
+  >To view the AST tree of a Jac file:
+  >```bash
+  >$ jac tool ir ast <file_path>
+  >```
