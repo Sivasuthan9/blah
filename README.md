@@ -1,4 +1,4 @@
-# Jac Language Command Line Interface (CLI)
+# **Jac Language Command Line Interface (CLI)**
 
 Jac Language CLI is with a variety of commands to facilitate users. Additionally, Jac language offers users the ability to define custom CLI commands through plugins. This document aims to provide an overview of each command along with clear usage instructions.
 
@@ -50,7 +50,7 @@ $ jac tool <jac_tool> <args>
   >$ jac tool ir ast <file_path>
   >```
 
-## 1. Command `run`:
+## 2. Command `run`:
 ### run
 The `run` command is utilized to run the specified .jac or .jir file.
 ### Usage:
