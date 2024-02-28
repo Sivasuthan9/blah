@@ -53,6 +53,7 @@ Parameters to execute the tool command:
     >```bash
     >$ jac tool ir ast <file_path>
     >```
+ 
     
     ## 2. jac_tool `pass_template`:
      `pass_template` tool generates pass template for jac.
@@ -60,6 +61,7 @@ Parameters to execute the tool command:
     $ jac tool pass_template
     ```
     No Parameters needed to use the pass_template tool
+ 
     
     ## 3. jac_tool `py_ast_nodes`:
      `py_ast_nodes` tool lists python ast nodes.
@@ -67,6 +69,7 @@ Parameters to execute the tool command:
     $ jac tool py_ast_nodes
     ```
     No Parameters needed to use the py_ast_nodes tool
+ 
     
     ## 4. jac_tool `md_doc`:
      `md_doc` tool generate mermaid markdown doc.
@@ -74,6 +77,7 @@ Parameters to execute the tool command:
     $ jac tool md_doc
     ```
     No Parameters needed to use the md_doc tool
+ 
     
     ## 5. jac_tool `automate_ref`:
      `automate_ref` tool automates the reference guide generation.
@@ -81,6 +85,7 @@ Parameters to execute the tool command:
     $ jac tool automate_ref
     ```
     No Parameters needed to use the automate_ref tool
+
 
 
 # 2. Command `run`:
@@ -99,6 +104,7 @@ $ jac run <file_path> [main] [cache]
   >```bash
   >$ jac run <file_path>
   >```
+
 
 
 # 3. Command `clean`:
