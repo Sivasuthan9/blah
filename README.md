@@ -9,20 +9,16 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
 ```bash
-$ jac tool [-h] tool ...
+$ jac tool [-h] tool args
 ```
-  ### Parameters:
+  ### parameters to use the tool:
+  -  `-h` : Optional which gives help message.
   - `tool`: The name of the AST tool to execute.
-  - `args`: Optional arguments for the AST tool.
+  - `args`: Optional arguments for the specific AST tool.
 
-### Arguments:
-- `tool`: str
-- `args`: Optional
-
-
-The `ir` command generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file.
+## 1. `ir` tool:
+ `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
 ### Usage
-
 ```bash
 $ jac tool ir <output_type> <file_path>
 ```
