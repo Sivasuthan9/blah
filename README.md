@@ -4,7 +4,7 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 
 ### Commands
 
-## 1. `tool` Command:
+## 1. Command `tool`:
 
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
