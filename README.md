@@ -25,15 +25,17 @@ $ jac tool <jac_tool> <args>
   ```bash
   $ jac tool ir <output> <file_path>
   ```
-  Parameters to use the ir tool:
--`output`: Choose one of the following options:
-    -`sym`: Displays the symbol table of the specified .jac file.
-    -`sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
-    -`ast` : Displays the Abstract Syntax Tree (AST) of the specified .jac file.
-    -`ast.`: Generates a dot graph representation of the AST for the specified .jac file.
-    -`pyast`: Generates the Python AST for a .py file or  Generates equivalent Python AST for a .jac file.
-    -`py`: Generates the relevant Python code for the respective Jac code for a .jac file.
-    -`file_path`: Path to the .jac or .py file.
+
+  ### Parameters to use the ir tool:
+
+- `output_type`: Choose one of the following options:
+  - `sym`: Provides the symbol table of the specified .jac file.
+  - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
+  - `ast`: Displays the Abstract Syntax Tree (AST) of the specified .jac file.
+  - `ast.`: Generates a dot graph representation of the AST for the specified .jac file.
+  - `pyast`: Generates the Python AST for a .py file or the relevant Python AST for the generated Python code from a .jac file.
+  - `py`: Displays the relevant generated Python code for the respective Jac code in a .jac file.
+- `file_path`: Path to the .jac or .py file.
 
   ### Examples
   >To get the symbol table tree of a Jac file:
