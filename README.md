@@ -12,14 +12,14 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 
 # 1. Command `tool`:
 ### tool
-The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
+Jac Language offers language tools to perform various tasks efficiently. The `tool` command is utilized to execute specific language tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
 ```bash
 $ jac tool <jac_tool> <args>
 ```
 Parameters to execute the tool command:
 - `jac_tool`: The name of the AST tool to execute.
-    - `ir`, `pass_template`, `py_ast_nodes`,  `md_doc`, `automate_ref` are available jac_tools(usage instruction is below)
+    - `ir`, `pass_template`, `py_ast_nodes`,  `md_doc`, `automate_ref` are the jac_tools used to handle (Usage instruction is below)
 - `args`: Optional arguments for the specific AST tool.
 
 
