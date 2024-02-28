@@ -32,15 +32,15 @@ Parameters to use the ir tool:
 - `file_path`: Path to the .jac or .py file.
 
 ### Examples
-To get the symbol table of a Jac file:
+To get the symbol table tree of a Jac file:
 ```bash
 $ jac tool ir sym <file_path>
 ```
-To generate a dot graph of the symbol table for a Jac file:
+To generate a dot graph of the symbol table tree for a Jac file:
 ```bash
 $ jac tool ir sym. <file_path>
 ```
-To view the AST of a Jac file:
+To view the AST tree of a Jac file:
 ```bash
 $ jac tool ir ast <file_path>
 ```
