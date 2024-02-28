@@ -11,10 +11,9 @@ The `tool` command is utilized to execute specific AST tools along with any opti
 ```bash
 $ jac tool [-h] tool ...
 ```
-
-### Parameters:
-- `tool`: The name of the AST tool to run.
-- `args`: Optional arguments for the AST tool.
+    ### Parameters:
+    - `tool`: The name of the AST tool to execute.
+    - `args`: Optional arguments for the AST tool.
 
 ### Arguments:
 - `tool`: str
