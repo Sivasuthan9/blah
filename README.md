@@ -22,6 +22,7 @@ Parameters to execute the tool command:
     - `ir`, `pass_template`, `py_ast_nodes`,  `md_doc`, `automate_ref` are available jac_tools(usage instruction is below)
 - `args`: Optional arguments for the specific AST tool.
 
+
     ## 1. jac_tool `ir`:
      `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
     ### Usage
@@ -52,28 +53,28 @@ Parameters to execute the tool command:
     >```bash
     >$ jac tool ir ast <file_path>
     >```
-  
+    
     ## 2. jac_tool `pass_template`:
      `pass_template` tool generates pass template for jac.
     ```bash
     $ jac tool pass_template
     ```
     No Parameters needed to use the pass_template tool
-  
+    
     ## 3. jac_tool `py_ast_nodes`:
      `py_ast_nodes` tool lists python ast nodes.
     ```bash
     $ jac tool py_ast_nodes
     ```
     No Parameters needed to use the py_ast_nodes tool
-
+    
     ## 4. jac_tool `md_doc`:
      `md_doc` tool generate mermaid markdown doc.
     ```bash
     $ jac tool md_doc
     ```
     No Parameters needed to use the md_doc tool
-
+    
     ## 5. jac_tool `automate_ref`:
      `automate_ref` tool automates the reference guide generation.
     ```bash
