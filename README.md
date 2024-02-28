@@ -11,7 +11,7 @@ The `tool` command is utilized to execute specific AST tools along with any opti
 ```bash
 $ jac tool jac_tool args
 ```
-  ### Parameters to execute the tool command:
+  Parameters to execute the tool command:
   - `jac_tool`: The name of the AST tool to execute.
   - `args`: Optional arguments for the specific AST tool.
 
@@ -21,7 +21,7 @@ $ jac tool jac_tool args
 ```bash
 $ jac tool ir <output> <file_path>
 ```
-### Parameters to use the ir tool:
+Parameters to use the ir tool:
 - `output`: Choose one of the following options:
   - `sym`: Displays the symbol table of the specified .jac file.
   - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
