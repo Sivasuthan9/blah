@@ -7,8 +7,8 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 
 ### Below are the default available Commands
 - [tool](#tool) , [format](#format) , [run](#run) , [build](#build) , [check](#check) , [enter](#enter) , [test](#test) , [clean](#clean)
-<details>
-<summary>## 1. Command `tool`: </summary>
+
+## 1. Command `tool`:
 ### tool
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
@@ -48,4 +48,3 @@ $ jac tool <jac_tool> <args>
   ```bash
   $ jac tool ir ast <file_path>
   ```
-</details>
