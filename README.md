@@ -52,7 +52,7 @@ $ jac tool <jac_tool> <args>
 
 ## 1. Command `run`:
 ### run
-The `tool` command is utilized to run the specified .jac or .jir file.
+The `run` command is utilized to run the specified .jac or .jir file.
 ### Usage:
 ```bash
 $ jac run <file_path> [main] [cache]
