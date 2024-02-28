@@ -34,27 +34,14 @@ $ jac tool ir <output> <file_path>
 ### Examples
 To get the symbol table of a Jac file:
 ```bash
-$ jac tool ir sym filename.jac
+$ jac tool ir sym <file_path>
 ```
-
 To generate a dot graph of the symbol table for a Jac file:
 ```bash
 $ jac tool ir sym. <file_path>
 ```
-
 To view the AST of a Jac file:
 ```bash
 $ jac tool ir ast <file_path>
 ```
-
-To generate a dot graph of the AST for a Jac file:
-```bash
-$ jac tool ir ast. <file_path>
-```
-
-To generate the Python AST for a .py file or the relevant Python AST for the generated Python code from a .jac file:
-```bash
-$ jac tool ir pyast <file_path>
-```
-
 
