@@ -5,7 +5,7 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 > [!TIP]
 > Type "help" on Jac CLI and see!
 
-### Below are the default available Commands
+### Click one of the default commands below and see.
 - [tool](#tool) , [format](#format) , [run](#run) , [build](#build) , [check](#check) , [enter](#enter) , [test](#test) , [clean](#clean)
 
 # 1. Command `tool`:
