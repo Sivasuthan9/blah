@@ -27,7 +27,6 @@ $ jac tool <jac_tool> <args>
   ```
 
   ### Parameters to use the ir tool:
-
 - `output_type`: Choose one of the following options:
   - `sym`: Provides the symbol table of the specified .jac file.
   - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
