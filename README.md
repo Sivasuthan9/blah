@@ -11,7 +11,7 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 - [enter](#contributing)
 - [test](#license)
 - [clean](#license)
-- 
+- [Introduction](#introduction)
 ## Command:
 
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
@@ -38,7 +38,7 @@ $ jac tool <jac_tool> <args>
     - `pyast`: Generates the Python AST for a .py file or  Generates equivalent Python AST for a .jac file.
     - `py`: Generates the relevant Python code for the respective Jac code for a .jac file.
   - `file_path`: Path to the .jac or .py file.
-  
+  ## Installation
   ### Examples
   To get the symbol table tree of a Jac file:
   ```bash
