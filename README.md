@@ -10,51 +10,78 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 
 
 
-## 1. Command `tool`:
+# 1. Command `tool`:
 ### tool
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
 ```bash
 $ jac tool <jac_tool> <args>
 ```
-  Parameters to execute the tool command:
-  - `jac_tool`: The name of the AST tool to execute.
-  - `args`: Optional arguments for the specific AST tool.
+Parameters to execute the tool command:
+- `jac_tool`: The name of the AST tool to execute.
+- `args`: Optional arguments for the specific AST tool.
 
-  ## 1. jac_tool `ir`:
-   `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
-  ### Usage
-  ```bash
-  $ jac tool ir <output_type> <file_path>
-  ```
+    ## 1. jac_tool `ir`:
+     `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
+    ### Usage
+    ```bash
+    $ jac tool ir <output_type> <file_path>
+    ```
+  
+    ### Parameters to use the ir tool:
+  - `output_type`: Choose one of the following options:
+    - `sym`: Provides the symbol table of the specified .jac file.
+    - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
+    - `ast`: Displays the Abstract Syntax Tree (AST) of the specified .jac file.
+    - `ast.`: Generates a dot graph representation of the AST for the specified .jac file.
+    - `pyast`: Generates the Python AST for a .py file or the relevant Python AST for the generated Python code from a .jac file.
+    - `py`: Displays the relevant generated Python code for the respective Jac code in a .jac file.
+  - `file_path`: Path to the .jac or .py file.
+  
+    ### Examples
+    >To get the symbol table tree of a Jac file:
+    >```bash
+    >$ jac tool ir sym <file_path>
+    >```
+    >To generate a dot graph of the symbol table tree for a Jac file:
+    >```bash
+    >$ jac tool ir sym. <file_path>
+    >```
+    >To view the AST tree of a Jac file:
+    >```bash
+    >$ jac tool ir ast <file_path>
+    >```
+  
+    ## 2. jac_tool `pass_template`:
+     `pass_template` tool generates pass template for jac.
+    ```bash
+    $ jac tool pass_template
+    ```
+    No Parameters needed to use the pass_template tool
+  
+    ## 3. jac_tool `py_ast_nodes`:
+     `py_ast_nodes` tool lists python ast nodes.
+    ```bash
+    $ jac tool py_ast_nodes
+    ```
+    No Parameters needed to use the py_ast_nodes tool
 
-  ### Parameters to use the ir tool:
-- `output_type`: Choose one of the following options:
-  - `sym`: Provides the symbol table of the specified .jac file.
-  - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
-  - `ast`: Displays the Abstract Syntax Tree (AST) of the specified .jac file.
-  - `ast.`: Generates a dot graph representation of the AST for the specified .jac file.
-  - `pyast`: Generates the Python AST for a .py file or the relevant Python AST for the generated Python code from a .jac file.
-  - `py`: Displays the relevant generated Python code for the respective Jac code in a .jac file.
-- `file_path`: Path to the .jac or .py file.
+    ## 4. jac_tool `md_doc`:
+     `md_doc` tool generate mermaid markdown doc.
+    ```bash
+    $ jac tool md_doc
+    ```
+    No Parameters needed to use the md_doc tool
 
-  ### Examples
-  >To get the symbol table tree of a Jac file:
-  >```bash
-  >$ jac tool ir sym <file_path>
-  >```
-  >To generate a dot graph of the symbol table tree for a Jac file:
-  >```bash
-  >$ jac tool ir sym. <file_path>
-  >```
-  >To view the AST tree of a Jac file:
-  >```bash
-  >$ jac tool ir ast <file_path>
-  >```
+    ## 5. jac_tool `automate_ref`:
+     `automate_ref` tool automates the reference guide generation.
+    ```bash
+    $ jac tool automate_ref
+    ```
+    No Parameters needed to use the automate_ref tool
 
 
-
-## 2. Command `run`:
+# 2. Command `run`:
 ### run
 The `run` command is utilized to run the specified .jac or .jir file.
 ### Usage:
@@ -72,7 +99,7 @@ $ jac run <file_path> [main] [cache]
   >```
 
 
-## 3. Command `clean`:
+# 3. Command `clean`:
 ### clean
 The `clean` command is utilized to remove the __jac_gen__ , __pycache__ folders from the current directory recursively.
 ### Usage:
@@ -83,7 +110,7 @@ No Parameters needed to execute the clean command
 
 
 
-## 4. Command `format`:
+# 4. Command `format`:
 ### format
 The `format` command is utilized to run the specified .jac file or format all .jac files in a given directory.
 ### Usage:
@@ -102,7 +129,7 @@ $ jac format <file_path/directory_path> [outfile] [debug]
 
 
 
-## 5. Command `check`:
+# 5. Command `check`:
 ### check
 The `check` command is utilized to run type checker for a specified .jac file.
 ### Usage:
@@ -114,7 +141,7 @@ Parameters to execute the check command:
 
 
 
-## 6. Command `build`:
+# 6. Command `build`:
 ### build
 The `build` command is utilized to build the specified .jac file.
 ### Usage:
@@ -126,7 +153,7 @@ $ jac build <file_path>
 
 
 
-## 7. Command `enter`:
+# 7. Command `enter`:
 ### enter
 The `enter` command is utilized to run the specified entrypoint function in the given .jac file.
 ### Usage:
@@ -145,7 +172,7 @@ Parameters to execute the enter command:
 
 
 
-## 8. Command `test`:
+# 8. Command `test`:
 ### test
 The `test` command is utilized to run the test suite in the specified .jac file.
 ```bash
