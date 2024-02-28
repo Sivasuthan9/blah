@@ -2,11 +2,11 @@
 
 Jac Language CLI is with a variety of commands to facilitate users. Additionally, Jac language offers users the ability to define custom CLI commands through plugins. This document aims to provide an overview of each command along with clear usage instructions.
 
-### Below are avilable Commands
-- [tool](#tool) , [format](#installation) , [run](#getting-started) , [build](#syntax) , [check](#examples) , [enter](#contributing) , [test](#license) , [clean](#license)
+### Below are the default available Commands
+- [tool](#tool) , [format](#format) , [run](#run) , [build](#build) , [check](#check) , [enter](#enter) , [test](#test) , [clean](#clean)
   
-## 1. Command `tool`:
-## tool
+## 1. Command `tool`: tool
+## 
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
 ```bash
