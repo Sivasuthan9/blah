@@ -6,7 +6,9 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 > Type "help" on Jac CLI and see!
 
 ### Click one of the default commands below and see.
-- [tool](#tool) , [format](#format) , [run](#run) , [build](#build) , [check](#check) , [enter](#enter) , [test](#test) , [clean](#clean)
+- [tool](#tool) , [run](#run) , [clean](#clean) , [format](#format) , [build](#build) , [check](#check) , [enter](#enter) , [test](#test) 
+
+
 
 # 1. Command `tool`:
 ### tool
@@ -19,11 +21,11 @@ $ jac tool <jac_tool> <args>
   - `jac_tool`: The name of the AST tool to execute.
   - `args`: Optional arguments for the specific AST tool.
 
-  ## 1. tool `ir`:
+  ## 1. jac_tool `ir`:
    `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
   ### Usage
   ```bash
-  $ jac tool ir <output> <file_path>
+  $ jac tool ir <output_type> <file_path>
   ```
 
   ### Parameters to use the ir tool:
@@ -50,6 +52,8 @@ $ jac tool <jac_tool> <args>
   >$ jac tool ir ast <file_path>
   >```
 
+
+
 # 2. Command `run`:
 ### run
 The `run` command is utilized to run the specified .jac or .jir file.
@@ -57,12 +61,96 @@ The `run` command is utilized to run the specified .jac or .jir file.
 ```bash
 $ jac run <file_path> [main] [cache]
 ```
-  Parameters to execute the tool command:
+  Parameters to execute the run command:
   - `file_path`: Path of .jac or .jir file to run.
-  - `main`: (bool, optional) A flag indicating whether the module being executed is the main module. Defaults to True
+  - `main`: (Optional, bool) A flag indicating whether the module being executed is the main module. Defaults to True
   - `cache` :The cache flag to cache
   ### Examples
   >To run file_path Jac file:
   >```bash
   >$ jac run <file_path>
   >```
+
+
+
+# 3. Command `format`:
+### format
+The `format` command is utilized to run the specified .jac file or format all .jac files in a given directory.
+### Usage:
+```bash
+$ jac format <file_path/directory_path> [outfile] [debug]
+```
+  Parameters to execute the format command:
+  - `file_path/directory_path`: The path to the .jac file or directory containing .jac files.
+  - `outfile`: (Optional) The output file path (only applies when formatting a single file).
+  - `debug` :(Optional) If True, print debug information.  Defaults to False
+  ### Examples
+  >To format all .jac files from walking through current located directory:
+  >```bash
+  >$ jac format .
+  >`
+
+
+
+# 4. Command `build`:
+### build
+The `build` command is utilized to build the specified .jac file.
+### Usage:
+```bash
+$ jac build <file_path>
+```
+  Parameters to execute the build command:
+  - `file_path`: Path of .jac file to build.
+
+
+
+# 5. Command `check`:
+### check
+The `check` command is utilized to run type checker for a specified .jac file.
+### Usage:
+```bash
+$ jac check <file_path>
+```
+Parameters to execute the check command:
+- `file_path`: Path of .jac file to run type checker.
+
+
+
+# 6. Command `enter`:
+### enter
+The `enter` command is utilized to run the specified entrypoint function in the given .jac file.
+### Usage:
+```bash
+$ jac enter <file_path> <entrypoint> <args>
+```
+Parameters to execute the enter command:
+- `file_path`: The path to the .jac file.
+- `entrypoint`: The name of the entrypoint function.
+- `args`: Arguments to pass to the entrypoint function.
+### Examples
+>To enter file_path Jac file
+>```bash
+>$ jac enter <file_path>
+>``
+
+
+
+# 7. Command `clean`:
+### clean
+The `clean` command is utilized to remove the __jac_gen__ , __pycache__ folders from the current directory recursively.
+### Usage:
+```bash
+$ jac clean
+```
+No Parameters needed to execute the clean command
+
+
+
+# 8. Command `test`:
+### test
+The `test` command is utilized to run the test suite in the specified .jac file.
+```bash
+$ jac test <file_path>
+```
+Parameters to execute the test command:
+- `file_path`: The path to the .jac file.
