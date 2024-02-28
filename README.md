@@ -8,7 +8,7 @@ Jac Language CLI is with a variety of commands to facilitate users. Additionally
 ### Below are the default available Commands
 - [tool](#tool) , [format](#format) , [run](#run) , [build](#build) , [check](#check) , [enter](#enter) , [test](#test) , [clean](#clean)
 
-# 1. Command `tool`:
+## 1. Command `tool`:
 ### tool
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 ### Usage:
@@ -19,29 +19,29 @@ $ jac tool <jac_tool> <args>
   - `jac_tool`: The name of the AST tool to execute.
   - `args`: Optional arguments for the specific AST tool.
 
-  ## 1. tool `ir`:
-   `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
-  ### Usage
-  ```bash
-  $ jac tool ir <output> <file_path>
-  ```
-  Parameters to use the ir tool:
-  - `output`: Choose one of the following options:
-    - `sym`: Displays the symbol table of the specified .jac file.
-    - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
-    - `ast` : Displays the Abstract Syntax Tree (AST) of the specified .jac file.
-    - `ast.`: Generates a dot graph representation of the AST for the specified .jac file.
-    - `pyast`: Generates the Python AST for a .py file or  Generates equivalent Python AST for a .jac file.
-    - `py`: Generates the relevant Python code for the respective Jac code for a .jac file.
-  - `file_path`: Path to the .jac or .py file.
+  >## 1. tool `ir`:
+  > `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
+  >### Usage
+  >```bash
+  >$ jac tool ir <output> <file_path>
+  >```
+  >Parameters to use the ir tool:
+  >- `output`: Choose one of the following options:
+  > - `sym`: Displays the symbol table of the specified .jac file.
+  >  - `sym.`: Generates a dot graph representation of the symbol table for the specified .jac file.
+  >  - `ast` : Displays the Abstract Syntax Tree (AST) of the specified .jac file.
+  >  - `ast.`: Generates a dot graph representation of the AST for the specified .jac file.
+  >  - `pyast`: Generates the Python AST for a .py file or  Generates equivalent Python AST for a .jac file.
+  >  - `py`: Generates the relevant Python code for the respective Jac code for a .jac file.
+  >- `file_path`: Path to the .jac or .py file.
 
-  ### Examples
-  To get the symbol table tree of a Jac file:
-  ```bash
-  $ jac tool ir sym <file_path>
-  ```
-  To generate a dot graph of the symbol table tree for a Jac file:
-  ```bash
+ > ### Examples
+  >To get the symbol table tree of a Jac file:
+ > ```bash
+ > $ jac tool ir sym <file_path>
+  >```
+ > To generate a dot graph of the symbol table tree for a Jac file:
+ > ```bash
   $ jac tool ir sym. <file_path>
   ```
   To view the AST tree of a Jac file:
