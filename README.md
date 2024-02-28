@@ -2,9 +2,13 @@
 
 Jac Language CLI is with a variety of commands to facilitate users. Additionally, Jac language offers users the ability to define custom CLI commands through plugins. This document aims to provide an overview of each command along with clear usage instructions.
 
-### Usage
+### Commands
 
 ## 1. `tool` Command:
+### Usage:
+```bash
+CLI tool [-h] tool ...
+```
 
 The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 
@@ -16,10 +20,7 @@ The `tool` command is utilized to execute specific AST tools along with any opti
 - `tool`: str
 - `args`: Optional
 
-### Usage:
-```bash
-CLI tool [-h] tool ...
-```
+
 The `ir` command generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file.
 ### Usage
 
