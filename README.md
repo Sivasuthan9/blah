@@ -15,7 +15,7 @@ $ jac tool jac_tool args
   - `jac_tool`: The name of the AST tool to execute.
   - `args`: Optional arguments for the specific AST tool.
 
-## 1.1. tool `ir`:
+## - 1. tool `ir`:
  `ir` tool generates an Abstract Syntax Tree (AST) and SymbolTable tree for a .jac file, or a Python AST for a .py file. `ir` tool is used with `tool` cli command.
 ### Usage
 ```bash
