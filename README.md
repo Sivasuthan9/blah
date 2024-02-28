@@ -6,7 +6,7 @@ The Jac Language CLI offers a variety of commands to facilitate Jac programming 
 
 ## 1. `tool` Command:
 
-The `tool` command is used to run the specified AST tool with optional arguments.
+The `tool` command is utilized to execute specific AST tools along with any optional arguments as needed. This command enables users to interact with language-specific command line tools designed to manage the language effectively.
 
 ### Parameters:
 - `tool`: The name of the AST tool to run.
