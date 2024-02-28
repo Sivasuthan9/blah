@@ -49,3 +49,20 @@ $ jac tool <jac_tool> <args>
   >```bash
   >$ jac tool ir ast <file_path>
   >```
+
+## 1. Command `run`:
+### run
+The `tool` command is utilized to run the specified .jac or .jir file.
+### Usage:
+```bash
+$ jac run <file_path> [main] [cache]
+```
+  Parameters to execute the tool command:
+  - `file_path`: Path of .jac or .jir file to run.
+  - `main`: (bool, optional) A flag indicating whether the module being executed is the main module. Defaults to True
+  - `cache` :The cache flag to cache
+  ### Examples
+  >To run file_path Jac file:
+  >```bash
+  >$ jac run <file_path>
+  >```
