@@ -12,7 +12,6 @@ The `tool` command is utilized to execute specific AST tools along with any opti
 $ jac tool jac_tool args
 ```
   ### parameters to use the tool:
-  -  `-h` : Optional which gives help message.
   - `jac_tool`: The name of the AST tool to execute.
   - `args`: Optional arguments for the specific AST tool.
 
